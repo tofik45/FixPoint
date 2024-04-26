@@ -17,7 +17,7 @@ while True:
 	elif event == 'Исправить':
 		with open(values['-FILE-']) as infile, open(OUTFILE, 'w') as outfile:
 			for line in infile:
-				numbers = 0
+				global numbers
 				if line.startswith('   '):
 					str_line = line.split()
 					numbers = float(str_line[0])
